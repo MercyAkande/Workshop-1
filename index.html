@@ -2,50 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Cornell Tech Design Tech Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Material Ontology</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <div class="left">Cornell Tech</div>
-    <div class="center">
-      Design Tech<br>
-      <span>Project Archive</span>
-    </div>
-    <div class="right"><a href="#">About</a></div>
-  </header>
+  <div id="container"></div>
+  <div id="ui">
+    <div id="title">Responsive Material Ontology — Pet Feeding Product</div>
+    <button id="resetBtn">Reset View</button>
+  </div>
 
-  <main>
-    <div class="project-meta">2025</div>
-    <div class="project-title">Design Tech Project</div>
-    <div class="course-info">DESIGN 8131 Specialization Project 1</div>
-    <div class="project-subtitle">Cornell Tech Student</div>
-    <div class="advisor">Advisor<br><strong>Design Tech Faculty</strong></div>
+  <!-- ✅ Use Three.js r149 (last stable version before deprecation) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/examples/js/controls/OrbitControls.js"></script>
 
-    <div class="section-title">Abstract</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis egestas eros ac ultrices. Aliquam sit amet neque quis dolor hendrerit aliquet non id sem. In ultricies mauris sit amet leo pulvinar, a egestas massa imperdiet. Proin vel imperdiet dolor. Integer commodo lectus quis dignissim efficitur. In augue diam, imperdiet eget purus a, faucibus tincidunt metus. Sed pellentesque eu nulla a fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vitae venenatis elit. Quisque blandit erat eu fringilla sodales. Maecenas lacinia faucibus nibh quis varius. Cras vulputate mollis augue at tempus.
+  <!-- ✅ PapaParse for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
 
-        Sed accumsan vestibulum augue at pulvinar. Suspendisse consequat, tortor sed viverra congue, lorem felis maximus augue, eget suscipit neque nibh vel velit. Sed et venenatis est. Suspendisse varius, sapien vitae pellentesque volutpat, nisl turpis dictum sapien, convallis sodales dui dui sit amet ipsum. Donec vel ligula ac lorem dapibus pellentesque quis bibendum dolor. Vivamus ex ligula, accumsan et tortor quis, pellentesque pulvinar felis. Sed eget sapien diam. Donec volutpat consectetur quam rutrum varius. Quisque nec ipsum bibendum, facilisis mauris in, accumsan arcu. Nunc iaculis efficitur orci, a varius nisl placerat a.</p>
-
-    <img src="https://images.squarespace-cdn.com/content/v1/582f98dbb3db2be72dc14252/1483126221752-JIZMPJTMTR7Z740CI9ZH/image-asset.jpeg?format=2500w" alt="Project Screenshot" class="content-image">
-
-    <div class="section-title">Motivation</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis egestas eros ac ultrices. Aliquam sit amet neque quis dolor hendrerit aliquet non id sem. In ultricies mauris sit amet leo pulvinar, a egestas massa imperdiet. Proin vel imperdiet dolor. Integer commodo lectus quis dignissim efficitur. In augue diam, imperdiet eget purus a, faucibus tincidunt metus. Sed pellentesque eu nulla a fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vitae venenatis elit. Quisque blandit erat eu fringilla sodales. Maecenas lacinia faucibus nibh quis varius. Cras vulputate mollis augue at tempus.
-
-        Sed accumsan vestibulum augue at pulvinar. Suspendisse consequat, tortor sed viverra congue, lorem felis maximus augue, eget suscipit neque nibh vel velit. Sed et venenatis est. Suspendisse varius, sapien vitae pellentesque volutpat, nisl turpis dictum sapien, convallis sodales dui dui sit amet ipsum. Donec vel ligula ac lorem dapibus pellentesque quis bibendum dolor. Vivamus ex ligula, accumsan et tortor quis, pellentesque pulvinar felis. Sed eget sapien diam. Donec volutpat consectetur quam rutrum varius. Quisque nec ipsum bibendum, facilisis mauris in, accumsan arcu. Nunc iaculis efficitur orci, a varius nisl placerat a.</p>
-
-    <div class="section-title">3D Visualization</div>
-    <p>Explore the interactive 3D scene below. Use your mouse to rotate the camera around the scene and see the geometric primitives from different angles.</p>
-    
-    <div class="threejs-container">
-      <canvas id="threejs-canvas"></canvas>
-    </div>
-  </main>
-
-  <!-- Three.js and OrbitControls -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
-  <script src="script.js"></script>
+  <!-- Your main script -->
+  <script src="app.js"></script>
 </body>
 </html>
