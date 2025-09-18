@@ -1,0 +1,13 @@
+source,target
+Material,Sun
+Material,Torch
+Material,Wrapping
+Material,Body
+Material,Responsivity
+Responsivity,Thermo
+Responsivity,Hydro
+Body,Feeding
+Wrapping,Feeding
+Material,Safety
+Material,Cleaning
+Material,Manufacture
