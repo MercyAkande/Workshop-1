@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Responsive Material Ontology</title>
-<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Material Ontology</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div id="container"></div>
-<div id="ui">
-  <div id="title">Responsive Material Ontology — Pet Feeding Product</div>
-  <button id="resetBtn">Reset View</button>
-</div>
+  <div id="container"></div>
+  <div id="ui">
+    <div id="title">Responsive Material Ontology — Pet Feeding Product</div>
+    <button id="resetBtn">Reset View</button>
+  </div>
 
-<!-- Three.js -->
-<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/three@0.150.1/examples/js/controls/OrbitControls.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-<script src="app.js"></script>
+  <!-- ✅ Use Three.js r149 (last stable version before deprecation) -->
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.149.0/examples/js/controls/OrbitControls.js"></script>
+
+  <!-- ✅ PapaParse for CSV parsing -->
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+  <!-- Your main script -->
+  <script src="app.js"></script>
 </body>
 </html>
