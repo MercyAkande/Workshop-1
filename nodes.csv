@@ -1,0 +1,13 @@
+id,label,category,x,y,z
+Material,Responsive Material,core,0,0,0
+Sun,Sun,light,50,40,-20
+Torch,Torch,light,-50,18,8
+Wrapping,Wrapping,usage,24,-10,12
+Body,Product Body,usage,-28,-12,14
+Feeding,Pet Feeding,usecase,0,-28,0
+Responsivity,Responsivity Modes,property,0,20,-20
+Thermo,Thermochromic,property,18,28,-5
+Hydro,Hydrochromic,property,-18,28,-5
+Safety,Safety / Non-toxic,constraint,-48,-28,-10
+Cleaning,Cleaning / Durability,constraint,48,-28,-10
+Manufacture,Manufacturability,process,0,40,18
